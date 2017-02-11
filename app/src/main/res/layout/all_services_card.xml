@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+        <android.support.v7.widget.CardView
+            android:layout_height="235dp"
+            android:layout_width="172dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/mCard"
+
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+
+            <ImageView
+                app:srcCompat="@drawable/services_card1"
+                android:id="@+id/mCateringImage"
+                android:scaleType="fitCenter"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
