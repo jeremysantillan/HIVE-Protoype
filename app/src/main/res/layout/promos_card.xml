@@ -27,15 +27,15 @@
             app:cardElevation="5dp"
             app:cardCornerRadius="10dp"
             android:layout_margin="10dp"
-            android:id="@+id/mCard"
+            android:id="@+id/mPromoCard"
 
             app:layout_constraintRight_toRightOf="parent"
             >
 
 
             <ImageView
-                app:srcCompat="@drawable/services_card1"
-                android:id="@+id/mCateringImage"
+                app:srcCompat="@drawable/promo_card1"
+                android:id="@+id/mPromoImage"
                 android:scaleType="centerCrop"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent" />
