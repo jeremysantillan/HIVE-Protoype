@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.santillanj.hiveproto.CateringProfile;
 import com.santillanj.hiveproto.Model.CateringServices;
 import com.santillanj.hiveproto.R;
 
@@ -65,6 +66,14 @@ public class AllServicesAdapter extends RecyclerView.Adapter<AllServicesAdapter.
                     break;
             }
         }
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, CateringProfile.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     public void addAll(List<CateringServices> itemList) {
